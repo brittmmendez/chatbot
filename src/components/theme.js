@@ -1,31 +1,29 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components';
 import ChatBot from 'react-simple-chatbot';
+
 const theme = {
   background: '#f5f8fb',
-  fontFamily: 'Helvetica Neue',
+  fontFamily: 'Arial',
   headerBgColor: '#7F377C',
   headerFontColor: '#fff',
   headerFontSize: '15px',
   botBubbleColor: '#7F377C',
   botFontColor: '#fff',
-  userBubbleColor: '#fff',
+  userBubbleColor: '#F9969F',
   userFontColor: '#4a4a4a',
 };
 
-const steps = [
-  {
-    id: '1',
-    message: 'Hello World',
-    end: true,
-  },
-];
-const MainTheme = () => {
-  return(
 
-  <ThemeProvider theme={theme}>
-    <ChatBot steps={steps}/>
-  </ThemeProvider>
+const MainTheme = (props) => {
+  
+  return(
+  <div>
+    <ThemeProvider theme={theme}>
+      <ChatBot steps={props.steps}handleEnd={props.handleEnd}/>
+    </ThemeProvider>
+
+  </div>
   )
 }
 

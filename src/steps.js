@@ -1,3 +1,4 @@
+import React from 'react'
 import Github from './components/github.js'
 import LinkedIn from './components/linkedin.js'
 import Blog from './components/blog.js'
@@ -16,12 +17,12 @@ const steps = [
      {
        id: '3',
        message: 'Hi {previousValue}, nice to meet you!',
-       trigger: '4'
+       trigger: '4',
      },
      {
        id: '4',
        message: 'Welcome to my site, what would you like to look at?',
-       trigger: '5'
+       trigger: '5',
      },
      {
        id: '5',
@@ -29,6 +30,7 @@ const steps = [
          { value: 1, label: 'Github', trigger: '6' },
          { value: 2, label: 'LinkedIn', trigger: '7' },
          { value: 3, label: 'Blog', trigger: '8' },
+
        ],
      },
      {
@@ -45,8 +47,11 @@ const steps = [
        id: '8',
        component: <Blog />,
        end: true,
-     }
+     },
 
-];
+
+]
+
+;
 
 export default steps;
