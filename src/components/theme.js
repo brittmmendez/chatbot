@@ -16,11 +16,11 @@ const theme = {
 
 
 const MainTheme = (props) => {
-  
+
   return(
   <div>
     <ThemeProvider theme={theme}>
-      <ChatBot steps={props.steps}handleEnd={props.handleEnd}/>
+      <ChatBot steps={props.steps}handleEnd={props.handleEnd} headerTitle={"My Funky Chatbot"}/>
     </ThemeProvider>
 
   </div>

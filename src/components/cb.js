@@ -3,7 +3,7 @@ import MainTheme from './theme.js'
 import steps from '../steps.js'
 
 class CB extends Component {
-  
+
   render() {
     return(
       <div>

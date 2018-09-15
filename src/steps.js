@@ -3,6 +3,10 @@ import Github from './components/github.js'
 import LinkedIn from './components/linkedin.js'
 import Blog from './components/blog.js'
 
+
+
+
+
 const steps = [
   {
        id: '1',
