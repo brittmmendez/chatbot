@@ -12,7 +12,28 @@ const theme = {
   botFontColor: '#fff',
   userBubbleColor: '#F9969F',
   userFontColor: '#4a4a4a',
-};
+  textAlign: "center",
+}
+
+const hcstyle = {
+  background: "#7f377c",
+  width: "350px",
+  height: "56px",
+
+  overflow: "hidden",
+  }
+
+const HC = (props) => {
+
+
+    return(
+      <div style={hcstyle}>
+        <h2>{props.headerTitle}</h2>
+      </div>
+    )
+
+}
+
 
 
 const MainTheme = (props) => {
@@ -20,7 +41,7 @@ const MainTheme = (props) => {
   return(
   <div>
     <ThemeProvider theme={theme}>
-      <ChatBot steps={props.steps}handleEnd={props.handleEnd} headerTitle={"My Funky Chatbot"}/>
+      <ChatBot steps={props.steps} handleEnd={props.handleEnd} headerComponent={<HC headerTitle={"My Test"} />}/>
     </ThemeProvider>
 
   </div>
